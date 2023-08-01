@@ -1,0 +1,34 @@
+.list,
+.orderlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .list li {
+    width: calc(33.33% - 250px); 
+    margin-bottom: 10px;
+    font-size: 20px; 
+  }
+.list{
+    list-style-type: none;
+}
+.orderlist li {
+    width: calc(33.33% - 250px); 
+    margin-bottom: 10px;
+    font-size: 20px; 
+  }
+.headers{
+    text-align: center;
+}
+#burger{
+  display: flex;
+  justify-content: space-between;
+  list-style-position: inside; 
+}
+.resized-image {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

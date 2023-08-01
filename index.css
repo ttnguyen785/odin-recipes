@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+    
+    color:whitesmoke;
+    font-size: 70px;
+}
+a {
+    text-decoration: none;
+    font-size: 40px;
+}
+a:link,
+a:visited {
+  color: white;
+}
+body {
+    background-color: rgb(68, 67, 64);
+}
+
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .list li {
+    width: calc(33.33% - 250px); 
+    margin-bottom: 10px; 
+  }
