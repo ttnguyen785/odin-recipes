@@ -4,27 +4,32 @@ h1 {
     color:whitesmoke;
     font-size: 70px;
 }
-a {
-    text-decoration: none;
-    font-size: 40px;
-}
-a:link,
-a:visited {
-  color: white;
-}
+
 body {
     background-color: rgb(68, 67, 64);
     margin: 0px;
 }
 
-.list {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+#menu{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
 
-  .list li {
-    width: calc(33.33% - 250px); 
-    margin-bottom: 10px; 
-  }
+.menu-item {
+  color: white;
+  font-size: clamp(1rem, 8vw, 3rem);
+  font-family: "Ibarra Real Nova", serif;
+
+  display: block;
+  text-decoration: none;
+  padding: clamp(0.25rem,0.5vw,1rem) 0rem;
+  transition: opacity 400ms ease;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+#menu-items:hover > .menu-item:hover {
+  opacity: 1;
+}
