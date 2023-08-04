@@ -15,25 +15,30 @@ h1 span {
 
 
 #menu-items {
-  text-align: center;
-}
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}  
 .menu-item {
   color: white;
   font-family: "Ibarra Real Nova", serif;
-  display: inline-block;
-  margin-right: 5%;
-  margin-left: 6%;
+  text-align: center;
   padding: 5px;
+  margin: 5px;
   border-radius: 10px;
   font-size: 30px;
   text-decoration: none;
   transition: opacity 400ms ease;
   background-color: black;
+  display: inline-block;
 }
 
-#menu-items:hover > .menu-item {
-  opacity: 0.3;
-}
-#menu-items:hover > .menu-item:hover {
+.menu-item:hover {
+  /* CSS properties for hovered menu item */
   opacity: 1;
+}
+
+.menu-item:not(:hover) {
+  /* CSS properties for non-hovered menu items */
+  opacity: 0.4;
 }
