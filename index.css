@@ -16,7 +16,6 @@ h1 span {
 
 #menu-items {
   display: flex;
-  padding: 10px;
   justify-content: space-around;
 }  
 .menu-item {
@@ -24,13 +23,12 @@ h1 span {
   font-family: "Ibarra Real Nova", serif;
   text-align: center;
   padding: 5px;
-  margin: 5px;
+  flex-grow: 0;
   border-radius: 10px;
   font-size: 30px;
   text-decoration: none;
   transition: opacity 400ms ease;
   background-color: black;
-  display: inline-block;
 }
 
 .menu-item:hover {
